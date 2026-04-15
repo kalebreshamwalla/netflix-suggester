@@ -1,37 +1,73 @@
-🎬 Netflix Random Show Suggester
-Overview
+# 🎬 Netflix Random Show Suggester
 
-This project is a simple web-based Netflix-style recommendation tool that suggests random TV shows based on a selected genre. Users can choose a category (Drama, Comedy, Fantasy, or Random), and the app will dynamically display a randomly selected show from that selection.
+## Overview
+This project is a simple web-based Netflix-style recommendation tool that suggests random TV shows based on a selected genre. Users can choose a category (Drama, Comedy, Fantasy, or Random), and the app dynamically displays a randomly selected show.
 
-The goal of this project is to practice JavaScript fundamentals such as arrays, functions, randomization, and DOM manipulation.
+This project was built to practice JavaScript fundamentals such as arrays, functions, randomization, and DOM manipulation.
 
-Features
-🎭 Select a genre from a dropdown menu
-🎲 Get a completely random show suggestion
-📺 Instantly display results on the webpage
-🧠 Built using modular JavaScript functions
-🎨 Simple frontend UI with HTML/CSS
-How It Works
+---
 
-When a user selects a genre:
+## Features
+- 🎭 Select a genre from a dropdown menu  
+- 🎲 Get a random show suggestion instantly  
+- 📺 Dynamic display of selected shows  
+- 🧠 Clean modular JavaScript functions  
+- 🎨 Simple and responsive UI  
 
-A random show is picked from that category
-If “Random” is selected, the app first chooses a random genre, then selects a show from it
-The selected show is displayed dynamically on the page
-Project Structure
-index.html – Main webpage layout
-style.css – Styling for the UI
-script.js – Core logic (main file you modify)
-provided.js – Helper functions (prebuilt utilities)
-shows.js – Show data organized by genre
-Core Logic
-Random Genre Selection
+---
 
-The app randomly selects between:
+## How It Works
+- The user selects a genre from the dropdown menu  
+- A random show is selected from that category  
+- If "Random" is selected, a genre is chosen first, then a show  
+- The result is displayed on the screen immediately  
 
-Drama
-Comedy
-Fantasy
-Random Show Selection
+---
 
-Once a genre is chosen, a random show from that category is displayed using a helper random function.
+## Project Structure
+- `index.html` – Main webpage layout  
+- `style.css` – Styling for the application  
+- `script.js` – Core logic (main implementation file)  
+- `provided.js` – Helper utility functions  
+- `shows.js` – Dataset of shows organized by genre  
+
+---
+
+## Core Logic
+
+### Random Genre Selection
+The app randomly selects one of the following:
+- Drama  
+- Comedy  
+- Fantasy  
+
+### Random Show Selection
+Once a genre is selected, a random show from that category is displayed using a helper function.
+
+---
+
+## Helper Functions
+This project uses two prebuilt utility functions:
+
+- `getRandomNumber(min, max)`  
+  Returns a random integer between `min` and `max` (inclusive)
+
+- `displayShow(show)`  
+  Displays the selected show on the webpage
+
+---
+
+## What I Learned
+- Working with arrays and indexing  
+- Using random number generation in JavaScript  
+- Writing modular functions  
+- DOM interaction basics  
+- Structuring a frontend JavaScript project  
+
+---
+
+## Future Improvements
+- Add more genres (Action, Thriller, Sci-Fi)  
+- Add show images and animations  
+- Save user preferences  
+- Turn into a full recommendation engine  
