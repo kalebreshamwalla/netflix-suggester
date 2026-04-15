@@ -1,64 +1,37 @@
+🎬 Netflix Random Show Suggester
+Overview
 
-# Netflix 🎥
+This project is a simple web-based Netflix-style recommendation tool that suggests random TV shows based on a selected genre. Users can choose a category (Drama, Comedy, Fantasy, or Random), and the app will dynamically display a randomly selected show from that selection.
 
-## Contents
-- Introduction
-- Starter Code
-- Provided Functions
-- Deliverable
-- Extra Help (If Needed)
+The goal of this project is to practice JavaScript fundamentals such as arrays, functions, randomization, and DOM manipulation.
 
-## Introduction
+Features
+🎭 Select a genre from a dropdown menu
+🎲 Get a completely random show suggestion
+📺 Instantly display results on the webpage
+🧠 Built using modular JavaScript functions
+🎨 Simple frontend UI with HTML/CSS
+How It Works
 
-For this milestone, you will collaborate with the Netflix development team to prototype a new feature: the random show suggestion. The team has already written code that presents a collection of shows in various genres, as well as code that displays a single show on the webpage. Your objective is to complete the two functions in script.js and ensure that the correct outcome is shown on the page based on the user's selection.
+When a user selects a genre:
 
-The final feature should function as follows:
+A random show is picked from that category
+If “Random” is selected, the app first chooses a random genre, then selects a show from it
+The selected show is displayed dynamically on the page
+Project Structure
+index.html – Main webpage layout
+style.css – Styling for the UI
+script.js – Core logic (main file you modify)
+provided.js – Helper functions (prebuilt utilities)
+shows.js – Show data organized by genre
+Core Logic
+Random Genre Selection
 
-When a user clicks on the dropdown menu labeled "Genres," they can make a selection. If they choose a specific genre, a random show from that genre will be displayed on the screen. If they select "Random," a show from any genre will be shown. Choosing "All" is already working.
+The app randomly selects between:
 
-The final user experience should function [like this](https://imgur.com/a/pQPkzI8).
+Drama
+Comedy
+Fantasy
+Random Show Selection
 
-## Starter Code
-
-Take a look at the top of script.js. There are three arrays that correspond to our genres of drama, fantasy, and comedy shows. Each array holds five shows.
-
-You'll notice two empty functions have already been declared in script.js. To complete the Milestone, you'll add code to the body of each of these functions.
-
-⚠️ Warning: Don't change the variables or names of functions! Changing them can cause problems with the end user experience.
-
-
-## Provided Functions
-The Netflix devs have written two helper functions you'll need to use to complete the feature. These functions are defined in `provided.js` but they can be called from `script.js`. 
-
-> **🗒 Note:** The only file you'll need to edit to complete the project is `script.js`.
-
-<hr>
-
-1. `getRandomNumber(min, max)`
-
-This function accepts two numbers: `min` and `max`. It returns a randomly generated number in between the supplied min and max (inclusive). Try calling `getRandomNumber(0, 4)` in the console a few times to see how it works.
-<hr>
-
-2. `displayShow(show)`
-
-This function accepts the name of a show (such as "The Witcher") and displays it on the page. It uses the _exact formatting_ of the strings in the arrays to find and display the correct show. Try running `displayShow("The Witcher")` and `displayShow("The Queen's Gambit")` in the console and check the page to see what happens.
-
-
-## Deliverable
-
-Below are the requirements for each of the three functions you need to finish in `script.js`. 
-
-### 1. **`chooseRandomGenre()`**
- 
-This function should return a random genre that is either "drama", "fantasy", or "comedy". You can use the provided `getRandomNumber()` function to randomly select one of the three possibilities.
-
-<hr>
-
-### 2. **`displayRandomShow(genre)`**
-
-The parameter `genre` will be a string that is either "drama", "fantasy", "comedy", or "random". If the parameter is "random", you'll use the `chooseRandomGenre()` function from above to reassign the parameter to one of the three possibilities. Otherwise based on the `genre` parameter, you should display a random show from the correspondding array. 
-
-
-## Extra Help (If Needed)
-You have everything you need to get started and complete this task. You should try it on your own first! Use your decomposition skills to break each task down into smaller steps and don't hesitate to practice your Google Fu. If you're still having trouble, check out `HINTS.md` for some extra help.
-# netflix-suggester
+Once a genre is chosen, a random show from that category is displayed using a helper random function.
